@@ -16,4 +16,6 @@ const picture = async(URLAddress) => {
   }
 }
 
-picture("https://random-d.uk/api/random")
+picture(
+  "https://random-d.uk/api/randomimg"
+)
