@@ -6,3 +6,14 @@
 
 "use strict"
 
+const picture = async(URLAddress) => {
+  try {
+    const response = await fetch(URLAddress)
+    const jsonData = await response.json()
+    document.getElementById("duck-image").innerHTML = "<img src=" + jsonData.url + ">"
+    } catch (error) {
+    console.log(error)
+  }
+}
+
+picture("https://random-d.uk/api/random")
