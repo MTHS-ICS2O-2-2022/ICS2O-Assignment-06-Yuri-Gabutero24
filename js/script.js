@@ -8,9 +8,9 @@
 
 const picture = async(URLAddress) => {
   try {
-    const response = await fetch(URLAddress)
-    const jsonData = await response.json()
-    document.getElementById("duck-image").innerHTML = "<img src=" + jsonData.url + ">"
+    const result = await fetch(URLAddress)
+    const jsonData = await result.json()
+    document.getElementById("duck").innerHTML = `<img src="${jsonData.url}" alt="random duck picture" />`
     } catch (error) {
     console.log(error)
   }
