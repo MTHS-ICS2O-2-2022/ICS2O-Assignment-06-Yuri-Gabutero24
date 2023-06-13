@@ -6,16 +6,14 @@
 
 "use strict"
 
-const picture = async(URLAddress) => {
+const duckPhoto = async(URLAddress) => {
   try {
     const result = await fetch(URLAddress)
     const jsonData = await result.json()
-    document.getElementById("duck").innerHTML = `<img src="${jsonData.url}" alt="random duck picture" />`
+    document.getElementById("duck").innerHTML = `<img src="${jsonData[0].url}" alt="random duck picture" />`
     } catch (error) {
     console.log(error)
   }
 }
 
-picture(
-  "https://random-d.uk/api/randomimg"
-)
+duckPhoto("https://random-d.uk/api/v2/randomimg")
