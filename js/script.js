@@ -11,7 +11,7 @@ const picture = async(URLAddress) => {
     const result = await fetch(URLAddress)
     const jsonData = await result.json()
     console.log(jsonData)
-    document.getElementById("duck").innerHTML = '<img src="' + jsonData.url + '" alt="API image" class="center" content-type: image/jpeg' +'>'
+    document.getElementById("duck").innerHTML = '<img src="' + jsonData.url + '" alt="Image" class="center" +'>
   } catch (error) {
     console.log(error)
   }
