@@ -4,14 +4,14 @@
             <root>
                 <mxCell id="0"/>
                 <mxCell id="1" parent="0"/>
-                <mxCell id="2" value="Random photos!" style="swimlane;startSize=40;" parent="1" vertex="1">
+                <mxCell id="2" value="Random quotes.." style="swimlane;startSize=40;" parent="1" vertex="1">
                     <mxGeometry x="111" y="140" width="606" height="380" as="geometry"/>
                 </mxCell>
-                <mxCell id="3" value="API Image here" style="whiteSpace=wrap;html=1;aspect=fixed;" parent="2" vertex="1">
-                    <mxGeometry x="193" y="120" width="220" height="220" as="geometry"/>
+                <mxCell id="4" value="&lt;font style=&quot;font-size: 24px;&quot;&gt;Here's your randomly generated quote:&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="2" vertex="1">
+                    <mxGeometry x="-41" y="20" width="521" height="80" as="geometry"/>
                 </mxCell>
-                <mxCell id="4" value="&lt;font style=&quot;font-size: 24px;&quot;&gt;Here's your randomly generated image:&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="2" vertex="1">
-                    <mxGeometry x="169.5" y="40" width="267" height="80" as="geometry"/>
+                <mxCell id="5" value="Quote here" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="2">
+                    <mxGeometry x="-11" y="70" width="111" height="30" as="geometry"/>
                 </mxCell>
             </root>
         </mxGraphModel>

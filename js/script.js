@@ -6,15 +6,16 @@
 
 "use strict"
 
-const picture = async(URLAddress) => {
+const quote = async(URLAddress) => {
   try {
     const result = await fetch(URLAddress)
     const jsonData = await result.json()
     console.log(jsonData)
-    document.getElementById("duck").innerHTML = '<img src="' + jsonData.url + '" alt="Image" class="center" +'>
+    document.getElementById("quote").innerHTML = "<div>" + jsonData.text + "</div>"
   } catch (error) {
     console.log(error)
+    document.getElementById("quote").innerHTML = "<div> Error </div>"
   }
 }
 
-picture("https://random-d.uk/api/random")
+quote("https://www.jcquotes.com/api/quotes/random")
